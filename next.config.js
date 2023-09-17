@@ -1,4 +1,21 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    images: {
+        remotePatterns: [
+            {
+                hostname: "images.unsplash.com",
+                protocol: "https",
+            },
 
-module.exports = nextConfig
+            {
+                hostname: "directus-production-8ad9.up.railway.app",
+                protocol: "https",
+            },
+        ],
+    },
+    experimental: {
+        serverActions: true,
+    }
+};
+
+module.exports = nextConfig;
