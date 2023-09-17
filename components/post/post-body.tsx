@@ -11,7 +11,7 @@ const PostBody = ({ body }: { body: string }) => {
           const { src, alt } = domNode.attribs;
           return (
             <Image
-              className="object-cover object-center w-full my-3 h-auto max-h-[300px] md:max-h-[500px]"
+              className="rounded-md object-cover object-center w-full my-3 h-auto max-h-[300px] md:max-h-[500px]"
               src={src}
               alt={alt}
               width={1280}

@@ -41,8 +41,10 @@ export default async function Home() {
 
   return (
     <PaddingContainer>
-      <main className="h-auto space-y-10">
+      <main className="space-y-10">
+
         <PostCard post={posts[0]} />
+        {/* <PostList layout="horizontal" posts={posts.filter((_post, index) => index == 0)} /> */}
         <PostList posts={posts.filter((_post, index) => index > 0 && index < 3)} />
         {/* @ts-expect-error Async Server Component */}
         <CTACard />

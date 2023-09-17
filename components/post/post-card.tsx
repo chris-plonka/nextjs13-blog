@@ -25,7 +25,7 @@ const PostCard = ({
         >
             {/* Post Image */}
             <Image
-                className={`w-full object-cover object-center h-full max-h-[300px] ${reverse ? "md:order-last" : ""
+                className={`rounded-md w-full object-cover object-center h-full max-h-[300px]  ${reverse ? "md:order-last" : ""
                     }`}
                 alt={post.title}
                 src={`${process.env.NEXT_PUBLIC_ASSETS_URL}${post.image}?key=optimised`}
