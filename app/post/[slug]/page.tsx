@@ -89,7 +89,14 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                             link={`https://www.facebook.com/sharer/sharer.php?u=${` ${process.env.NEXT_PUBLIC_SITE_URL}/post/${post.slug}`
                                 }`}
                         />
+                        <SocialLink
+                            isShareURL
+                            platform="target"
+                            link={`https://api.whatsapp.com/send?text=${`${process.env.NEXT_PUBLIC_SITE_URL}/post/${post.slug}`
+                                }`}
+                        />
                     </div>
+
                 </div>
                 <PostBody body={post.body} />
             </div>
