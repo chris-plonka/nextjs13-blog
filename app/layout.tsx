@@ -13,17 +13,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Next.js',
     description: 'The React Framework for the Web',
-    url: 'https://krzysztofplonka.pl',
+    url: `${process.env.NEXT_PUBLIC_URL}`,
     siteName: 'Next.js',
     images: [
       {
         url: `${process.env.NEXT_PUBLIC_ASSETS_URL}6692021d-5644-44a7-802f-1b9bd7454f70.jpeg`,
-      width: 800,
-      height: 600,
+        width: 800,
+        height: 600,
       },
     ],
-locale: 'en_US',
-  type: 'website',
+    locale: 'en_US',
+    type: 'website',
   },
 };
 

@@ -92,7 +92,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                         <SocialLink
                             isShareURL
                             platform="target"
-                            link={`https://api.whatsapp.com/send?text=${`${process.env.NEXT_PUBLIC_SITE_URL}/post/${post.slug}`
+                            link={`https://api.whatsapp.com/send?text${`${process.env.NEXT_PUBLIC_SITE_URL}/post/${post.slug}`
                                 }`}
                         />
                     </div>
