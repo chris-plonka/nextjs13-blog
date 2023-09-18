@@ -42,7 +42,7 @@ export default async function Home() {
       <main className="space-y-10">
         <PostCard post={posts[0]} />
         <PostList posts={posts.filter((_post, index) => index > 0 && index < 3)} />
-        <CTACard />
+
         <PostCard reverse post={posts[3]} />
         <PostList posts={posts.filter((_post, index) => index > 3 && index < 6)} />
         <PostCard post={posts[6]} />
