@@ -35,4 +35,4 @@ const PostBody = ({ body }: { body: string }) => {
   )
 }
 
-export default PostBody
+export default PostBody;

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { revalidateTag } from "next/cache";
 
 const CTACard = async () => {
-
+/*
     const formAction = async (formData: FormData) => {
         "use server";
         try {
@@ -29,7 +29,7 @@ const CTACard = async () => {
         .then((res) => res.json())
         .then((res) => res.meta.total_count)
         .catch((error) => console.log(error));
-
+*/
     return (
         <div className="relative px-6 py-10 overflow-hidden wrounded-md bg-slate-100">
             {/* Overlay */}
@@ -51,8 +51,8 @@ const CTACard = async () => {
 
                 {/* Form */}
                 <form
-                    key={subscribersCount + "subscribers-form"}
-                    action={formAction}
+                    /*      key={subscribersCount + "subscribers-form"}
+                          action={formAction} */
                     className="flex itens-center gap-2 mt-6"
                 >
                     <input
@@ -65,11 +65,11 @@ const CTACard = async () => {
                 </form>
 
                 {/* Subsribers */}
-                <div className="mt-5 text-neutral-700">
+              {/*  <div className="mt-5 text-neutral-700">
                     Join our {" "}
                     <span className="px-2 py-1 text-sm bg-neutral-700 rounded-md text-neutral-100">{subscribersCount}</span>
                     {" "}subscribers now!
-                </div>
+    </div> */}
             </div>
         </div >
     );

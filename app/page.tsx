@@ -1,5 +1,3 @@
-
-import React from 'react';
 import CTACard from "@/components/elements/cta-card";
 import PaddingContainer from "@/components/layout/padding-container";
 import PostCard from "@/components/post/post-card";
@@ -43,10 +41,11 @@ export default async function Home() {
     <PaddingContainer>
       <main className="space-y-10">
 
-        <PostCard post={posts[0]} />
-        {/* <PostList layout="horizontal" posts={posts.filter((_post, index) => index == 0)} /> */}
+
+          <PostCard post={posts[0]} />
+       
         <PostList posts={posts.filter((_post, index) => index > 0 && index < 3)} />
-        {/* @ts-expect-error Async Server Component */}
+
         <CTACard />
         <PostCard reverse post={posts[3]} />
         <PostList posts={posts.filter((_post, index) => index > 3 && index < 6)} />

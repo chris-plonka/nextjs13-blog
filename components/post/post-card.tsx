@@ -18,19 +18,19 @@ const PostCard = ({
     return (
         <Link
             className={`@container ${layout === "horizontal"
-                ? "grid items-center grid-cols-1 md:grid-cols-2 gap-10"
+                ? "grid items-center grid-cols-1 gap-10 md:grid-cols-2"
                 : "space-y-10"
                 } `}
             href={`/post/${post.slug}`}
         >
             {/* Post Image */}
             <Image
-                className={`rounded-md w-full object-cover object-center h-full max-h-[300px]  ${reverse ? "md:order-last" : ""
+                className={`rounded-md w-full object-cover object-center h-[300px] max-h-[300px]  ${reverse ? "md:order-last" : ""
                     }`}
                 alt={post.title}
                 src={`${process.env.NEXT_PUBLIC_ASSETS_URL}${post.image}?key=optimised`}
-                width={600}
-                height={300}
+                width={1280}
+                height={500}
             />
             {/* Post Content */}
             {/* @ts-expect-error Async Server Component */}
