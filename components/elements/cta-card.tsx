@@ -1,35 +1,35 @@
 import directus from "@/lib/directus";
 import Image from "next/image";
-import { revalidateTag } from "next/cache";
+
 
 const CTACard = async () => {
-/*
-    const formAction = async (formData: FormData) => {
-        "use server";
-        try {
-            const email = formData.get("email");
-            await directus.items("subscribers").createOne({
-                email,
-            });
-            revalidateTag("subscribers-count");
-        } catch (error) {
-            console.log(error);
-        }
-
-    };
-
-    const subscribersCount = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}items/subscribers?meta=total_count&access_token=${process.env.ADMIN_TOKEN}`,
-        {
-            next: {
-                tags: ["subscribers-count"],
-            },
-        }
-    )
-        .then((res) => res.json())
-        .then((res) => res.meta.total_count)
-        .catch((error) => console.log(error));
-*/
+    /*
+        const formAction = async (formData: FormData) => {
+            "use server";
+            try {
+                const email = formData.get("email");
+                await directus.items("subscribers").createOne({
+                    email,
+                });
+                revalidateTag("subscribers-count");
+            } catch (error) {
+                console.log(error);
+            }
+    
+        };
+    
+        const subscribersCount = await fetch(
+            `${process.env.NEXT_PUBLIC_API_URL}items/subscribers?meta=total_count&access_token=${process.env.ADMIN_TOKEN}`,
+            {
+                next: {
+                    tags: ["subscribers-count"],
+                },
+            }
+        )
+            .then((res) => res.json())
+            .then((res) => res.meta.total_count)
+            .catch((error) => console.log(error));
+    */
     return (
         <div className="relative px-6 py-10 overflow-hidden wrounded-md bg-slate-100">
             {/* Overlay */}
@@ -65,7 +65,7 @@ const CTACard = async () => {
                 </form>
 
                 {/* Subsribers */}
-              {/*  <div className="mt-5 text-neutral-700">
+                {/*  <div className="mt-5 text-neutral-700">
                     Join our {" "}
                     <span className="px-2 py-1 text-sm bg-neutral-700 rounded-md text-neutral-100">{subscribersCount}</span>
                     {" "}subscribers now!

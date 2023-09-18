@@ -29,8 +29,8 @@ const PostCard = ({
                     }`}
                 alt={post.title}
                 src={`${process.env.NEXT_PUBLIC_ASSETS_URL}${post.image}?key=optimised`}
-                width={1280}
-                height={500}
+                width={600}
+                height={300}
             />
             {/* Post Content */}
             {/* @ts-expect-error Async Server Component */}
