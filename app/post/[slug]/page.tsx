@@ -6,6 +6,7 @@ import PaddingContainer from "@/components/layout/padding-container";
 import PostHero from "@/components/post/post-hero";
 import PostBody from "@/components/post/post-body";
 import directus from "@/lib/directus";
+import { getWhatsAppUrl } from "@phntms/react-share";
 import { cache } from "react";
 
 export const generateStaticParams = async () => {
@@ -92,8 +93,8 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                         <SocialLink
                             isShareURL
                             platform="target"
-                            link={`https://api.whatsapp.com/send?text${`${process.env.NEXT_PUBLIC_SITE_URL}/post/${post.slug}`
-                                }`}
+                            link={`whatsapp://send?text= Please Visit ${` ${process.env.NEXT_PUBLIC_SITE_URL}/post/${post.slug}`
+                             }`}
                         />
                     </div>
 

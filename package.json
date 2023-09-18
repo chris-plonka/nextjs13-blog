@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@directus/sdk": "^10.3.3",
+    "@phntms/react-share": "^1.0.2-rc1",
     "@tailwindcss/container-queries": "^0.1.1",
     "@types/node": "20.2.3",
     "@types/react": "18.2.6",
