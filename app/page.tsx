@@ -1,4 +1,3 @@
-import CTACard from "@/components/elements/cta-card";
 import PaddingContainer from "@/components/layout/padding-container";
 import PostCard from "@/components/post/post-card";
 import PostList from "@/components/post/post-lists";
