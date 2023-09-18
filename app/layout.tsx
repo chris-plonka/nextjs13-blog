@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     siteName: 'Next.js',
     images: [
       {
-        url: 'https://krzysztofplonka.pl/_next/image?url=https%3A%2F%2Fdirectus-production-8ad9.up.railway.app%2Fassets%2F28ed0c83-f4b1-49e6-9646-a02ee818881f%3Fkey%3Doptimised&w=1920&q=75',
-        width: 800,
-        height: 600,
+        url: `${process.env.NEXT_PUBLIC_ASSETS_URL}6692021d-5644-44a7-802f-1b9bd7454f70.jpeg`,
+      width: 800,
+      height: 600,
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+locale: 'en_US',
+  type: 'website',
   },
 };
 
