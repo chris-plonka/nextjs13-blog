@@ -6,7 +6,6 @@ import PaddingContainer from "@/components/layout/padding-container";
 import PostHero from "@/components/post/post-hero";
 import PostBody from "@/components/post/post-body";
 import directus from "@/lib/directus";
-import { getWhatsAppUrl } from "@phntms/react-share";
 import { cache } from "react";
 
 export const generateStaticParams = async () => {
