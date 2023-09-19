@@ -14,7 +14,7 @@ const PostContent = async ({ post, isPostPage = false }: PostContentProps) => {
             <div className={`flex items-center flex-wrap gap-2 text-xs @md:text-sm text-neutral-400 ${isPostPage ? "text-sm" : "text-xs @md: text-sm"
                 }`}
             >
-                <div className={`font-medium ${post.category.title === "Poland"
+                <div className={`font-medium ${post.category.title === "Polska"
                     ? "text-emerald-600"
                     : "text-blue-600"
                     }`}

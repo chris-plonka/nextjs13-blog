@@ -13,10 +13,10 @@ const Navigation = () => {
 
             <ul className="flex items-center gap-4 text-neutral-600">
               <li>
-                <Link href="/poland">Poland</Link>
+                <Link href="/poland">Polska</Link>
               </li>
               <li>
-                <Link href="/slovakia">Slovakia</Link>
+                <Link href="/slovakia">Słowacja</Link>
               </li>
             </ul>
           </nav>
