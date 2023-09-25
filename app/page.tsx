@@ -51,7 +51,7 @@ export default async function Home() {
         <PostCard post={posts[12]} />
         <PostList posts={posts.filter((_post, index) => index > 12 && index < 15)} />
         <PostCard reverse post={posts[15]} />
-        <PostCard post={posts[16]} />
+        <PostList posts={posts.filter((_post, index) => index > 15 && index < 18)} />
       </main>
 
     </PaddingContainer>
