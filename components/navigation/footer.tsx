@@ -52,6 +52,7 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom Section */}
+
                 <div className="flex flex-wrap items-center justify-between gap-4 py-3 mt-16 border-t">
                     <div className="text-sm text-neutral-400">
                         All rights are reserved | Copyright {new Date().getFullYear()}
